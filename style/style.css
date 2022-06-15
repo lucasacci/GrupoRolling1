@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans&display=swap');
+  
+
+  .color{
+    background-color: #1C242E;
+  } 
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: whitesmoke !important;
+    opacity: 1 !important; /* Firefox */
+  }
+
+  .placeholder2{
+    color: #6C757D;
+  }
+
+  .color3{
+    color: white !important;
+  }
+
+  .footer1{
+    padding: 50px;
+    background-color: #1C242E;
+  }
+  .footer2{
+    padding: 10px;
+    background-color: #161e24;
+  }
+
+  #letra{
+    font-family: 'GoodDog Plain' !important;
+    font-weight: 500;
+    font-size: larger;
+  }
+
+@media screen and (max-width: 767px){
+	.responsive{
+		justify-content: center;
+		text-align: center;
+	}
+}
