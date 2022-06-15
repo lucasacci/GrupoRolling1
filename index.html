@@ -1,83 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5a53958b9a.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/style.css">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5a53958b9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
     <title>Pokedex</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger py-5">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around">
-                    <a href="index.html" class="display-5 text-light mx-5 text-decoration-none">POKEDEX</a>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger py-5">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around">
+              <a
+                href="index.html"
+                class="display-5 text-light mx-5 text-decoration-none"
+                >POKEDEX</a
+              >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-          
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2 bg-dark placeholder" type="search" placeholder="Buscador" aria-label="Search">
-                  <button class="btn btn-outline-primary me-4 " type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-                <!-- Modal -->
-<div class="modal fade" id="modalMedialuna" tabindex="-1" aria-labelledby="modalMedialunaLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content ">
-        <div class="modal-header bg-dark">
-          <h3 class="modal-title text-primary" id="modalMedialunaLabel"> <strong>LOGIN</strong> </h3>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 bg-dark placeholder"
+                type="search"
+                placeholder="Buscador"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary me-4" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="modal-body bg-dark">
-          <p class="fs-4 text-center text-light">Ingrese sus datos</p> 
-          <div class="mb-3">
-            <label for="usuario" class="form-label text-light">Usuario</label>
-            <input type="text" id="nombreApellido" placeholder="Ingrese su usuario" class="form-control bg-secondary" minlength="3" maxlength="20" required>
-        </div>
-          <div class="mb-3">
-            <label for="password" class="form-label text-light">Contraseña</label>
-            <input type="password" id="nombreApellido" placeholder="Ingrese su contraseña" class="form-control bg-secondary text-light" minlength="3" maxlength="20" required>
-        </div>
-        </div>
-        <div class="modal-footer bg-dark">
-          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <a type="button" class="btn btn-outline-primary">Ingresar</a>
-          <a href="error404.html"></a>
-        </div>
-      </div>
-    </div>
-  </div>
+      </nav>
     </header>
     <main>
-      <hr>
+      <hr />
+      <section class="container">
+        <div class="row">
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top" alt="Bulbasaur" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º001
+              </p>
+              <h5 class="card-title">Bulbasaur</h5>
+              <span class="badge rounded-pill bg-success">Planta</span>
+              <span class="badge rounded-pill bg-secondary">Veneno</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" class="card-img-top" alt="Ivysaur" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º002
+              </p>
+              <h5 class="card-title">Ivysaur </h5>
+              <span class="badge rounded-pill bg-success">Planta</span>
+              <span class="badge rounded-pill bg-secondary">Veneno</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" class="card-img-top" alt="Venusaur" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º003
+              </p>
+              <h5 class="card-title">Venusaur </h5>
+              <span class="badge rounded-pill bg-success">Planta</span>
+              <span class="badge rounded-pill bg-secondary">Veneno</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" class="card-img-top" alt="Charmander" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º004
+              </p>
+              <h5 class="card-title">Charmander</h5>
+              <span class="badge rounded-pill bg-danger">Fuego</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" class="card-img-top" alt="Charmeleon" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º005
+              </p>
+              <h5 class="card-title">Charmeleon</h5>
+              <span class="badge rounded-pill bg-danger">Fuego</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" class="card-img-top" alt="Charizard" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º006
+              </p>
+              <h5 class="card-title">Charizard</h5>
+              <span class="badge rounded-pill bg-danger">Fuego</span>
+              <span class="badge rounded-pill bg-dark">Volador</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" class="card-img-top" alt="Squirtle" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º007
+              </p>
+              <h5 class="card-title">Squirtle</h5>
+              <span class="badge rounded-pill bg-info">Agua</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png" class="card-img-top" alt="Arcanine" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º059
+              </p>
+              <h5 class="card-title">Arcanine</h5>
+              <span class="badge rounded-pill bg-danger">Fuego</span>
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-6 col-md-3">
+          <div class="card my-3">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png" class="card-img-top" alt="Mew" />
+            <div class="card-body">
+              <p class="card-text">
+                N.º151
+              </p>
+              <h5 class="card-title">Mew </h5>
+              <span class="badge rounded-pill bg-primary">Psiquico</span>
+
+              <br>
+              <a href="#" class="btn btn-primary my-3">Ver detalle</a>
+            </div>
+          </div>
+        </aside>        
+      </div>
+      </section>
     </main>
     <footer class="text-center">
       <div class="footer2">
-        <p class="text-secondary text-center align-middle">&copy Todos los derechos reservados</p> 
+        <p class="text-secondary text-center align-middle">
+          &copy Todos los derechos reservados
+        </p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
