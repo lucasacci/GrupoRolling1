@@ -45,3 +45,35 @@
 		text-align: center;
 	}
 }
+
+/* COLORES TIPOS DE POKEMON */
+
+.tipoplanta{
+  background-color: #9BCC50;
+  color: white;
+}
+
+.tipoveneno{
+  background-color: #B97FC9;
+  color: white;
+}
+
+.tipofuego{
+  background-color: #FD7D24;
+  color: white;
+}
+
+.tipovolador{
+  background-color: #3DC7EF;
+  color: white;
+}
+
+.tipoagua{
+  background-color: #4592C4;
+  color: white;
+}
+
+.tipopsiquico{
+  background-color: #F366B9;
+  color: white;
+}
