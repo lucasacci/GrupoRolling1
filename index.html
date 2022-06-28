@@ -18,7 +18,7 @@
     <title>Pokedex</title>
   </head>
   <body>
-    <header>
+    <header class="bg-danger">
       <nav class="navbar navbar-expand-lg navbar-dark tipofuego py-5">
         <div class="container-fluid">
           <button
@@ -67,12 +67,12 @@
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2 bg-dark placeholder"
+                class="form-control me-2 bg-light placeholder"
                 type="search"
                 placeholder="Buscador"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-primary me-4" type="submit">
+              <button class="btn btn-outline-black me-4" type="submit">
                 Buscar
               </button>
             </form>
@@ -81,6 +81,35 @@
       </nav>
     </header>
     <main>
+      <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/osopikachu.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/pikachu.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/pokebola.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
       <hr />
       <section class="container">
         <div class="row">
@@ -218,9 +247,9 @@
       </div>
       </section>
     </main>
-    <footer class="text-center">
+    <footer class="text-center  bg-danger py-3">
       <div class="footer2">
-        <p class="text-secondary text-center align-middle">
+        <p class="text-light text-center align-middle fw-bold fs-5">
           &copy Todos los derechos reservados
         </p>
       </div>
